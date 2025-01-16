@@ -1,4 +1,4 @@
-# SQL Problem: Find Low Fat and Recyclable Products
+# SQL Problem: 1757. Find Low Fat and Recyclable Products
 
 ## Problem Description
 
