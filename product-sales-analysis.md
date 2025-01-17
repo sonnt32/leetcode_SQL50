@@ -34,7 +34,11 @@ Demo input:
 | product_name | varchar |
 
 ## SQL Solution:
-
-SELECT Product.product_name, Sales.year,Sales.price
+```sql
+SELECT Product.product_name, Sales.year, Sales.price
 FROM Sales
-WHERE 
+JOIN Product ON Sales.product_id = Product.product_id;
+```
+## Explanation
+
+I used the JOIN function to merge two tables and show the product's name, year, price, and its sales
