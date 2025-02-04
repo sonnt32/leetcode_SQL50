@@ -12,7 +12,7 @@ The resulting table should have the machine_id along with the average time as pr
 | activity_type  | enum    |
 | timestamp      | float   |
 
-*`Description Table:`*
+*Description Table:*
 
 The table shows the user activities for a factory website.
 
