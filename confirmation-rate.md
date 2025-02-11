@@ -54,5 +54,3 @@ ORDER BY s.user_id;
 - Calculate the confirmation rate as `so_thanh_cong / so_request`, handling cases where `so_request` is `0` using `COALESCE` and `NULLIF` to prevent division by zero.
 - Round the result to two decimal places for consistency.
 - The final result is sorted by `user_id` to match the expected output format.
-```
-
