@@ -30,12 +30,3 @@ WHERE low_fats = 'Y'
 ```
 
 ---
-
-## Explanation
-
-- **Filter Conditions**:
-  - `low_fats = 'Y'`: Ensures the product is low fat.
-  - `recyclable = 'Y'`: Ensures the product is recyclable.
-- **Result**: Return only the `product_id` column for products that satisfy both conditions.
-
----
