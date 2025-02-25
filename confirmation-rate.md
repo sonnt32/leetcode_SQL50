@@ -1,12 +1,6 @@
 
 # SQL Problem: 1934. Confirmation Rate
 
-## Problem Description
-Each user signs up at a certain time and may request confirmation messages. 
-Each confirmation message can either be confirmed or timeout. 
-The confirmation rate of a user is calculated as the number of 'confirmed' messages divided by the total number of requested messages. 
-If a user has not requested any confirmation messages, the confirmation rate is 0. The result should be rounded to two decimal places.
-
 ## Table Schema
 
 ### Signups Table
@@ -16,8 +10,6 @@ If a user has not requested any confirmation messages, the confirmation rate is 
 | user_id    | int      |
 | time_stamp | datetime |
 ```
-- `user_id` is the unique identifier for each user.
-- Each row contains the signup time of a user.
 
 ### Confirmations Table
 ```
@@ -27,10 +19,6 @@ If a user has not requested any confirmation messages, the confirmation rate is 
 | time_stamp | datetime |
 | action     | ENUM     |
 ```
-- `(user_id, time_stamp)` is the primary key.
-- `user_id` is a foreign key referencing the `Signups` table.
-- `action` is an ENUM with possible values: `'confirmed'`, `'timeout'`.
-- Each row represents a confirmation request and whether it was confirmed or timed out.
 
 ## SQL Solution
 ```sql
