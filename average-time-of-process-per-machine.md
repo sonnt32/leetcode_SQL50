@@ -1,11 +1,4 @@
-# SQL Problem: 1661. Average Time of Process per Machine
-## Table Schema:
-| Column Name    | Type    |
-|----------------|---------|
-| machine_id     | int     |
-| process_id     | int     |
-| activity_type  | enum    |
-| timestamp      | float   |
+# 1661. Average Time of Process per Machine
 
 ## SQL solution:
 ```sql
@@ -28,6 +21,3 @@ SELECT machine_id, avg(time_xu_ly) as processing_time
 FROM TIME_XU_LY
 GROUP BY machine_id
 ```
-
-## Explanation Query:
-This query shows the average amount of time the machine needs to run several processes.
